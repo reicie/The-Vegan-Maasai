@@ -6,6 +6,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -18,7 +20,9 @@ import { MatDividerModule } from '@angular/material/divider';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatCardModule,
+    MatFormFieldModule
   ],
   exports: [
     CommonModule,
@@ -27,7 +31,9 @@ import { MatDividerModule } from '@angular/material/divider';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatCardModule,
+    MatFormFieldModule
   ]
 })
 export class MaterialModule { }

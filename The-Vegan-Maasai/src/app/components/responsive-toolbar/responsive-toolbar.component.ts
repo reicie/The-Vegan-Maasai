@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from '../interfaces/menu-item';
+import { MenuItem } from '../../interfaces/menu-item';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,28 +14,25 @@ export class ResponsiveToolbarComponent implements OnInit {
     link: "./home",
     label: "Home",
     icon: "home",
-    showOnMobile: true,
+    showOnMobile: false,
     showOnTablet: true,
-    showOnDesktop: true,
-    index: 0
+    showOnDesktop: true
   },
   {
     link: "./recipes",
     label: "Recipe",
     icon: "",
-    showOnMobile: true,
+    showOnMobile: false,
     showOnTablet: true,
-    showOnDesktop: true,
-    index: 1
+    showOnDesktop: true
   },
   {
     link: "./blog",
     label: "Blog",
     icon: "rss_feed",
-    showOnMobile: true,
+    showOnMobile: false,
     showOnTablet: true,
-    showOnDesktop: true,
-    index: 2
+    showOnDesktop: true
   },
   {
   link: "./about",
@@ -43,8 +40,7 @@ export class ResponsiveToolbarComponent implements OnInit {
   icon: "",
   showOnMobile: false,
   showOnTablet: true,
-  showOnDesktop: true,
-  index: 3
+  showOnDesktop: true
   },
   {
   link: "./contact-us",
@@ -52,8 +48,7 @@ export class ResponsiveToolbarComponent implements OnInit {
   icon: "",
   showOnMobile: false,
   showOnTablet: true,
-  showOnDesktop: true,
-  index: 4
+  showOnDesktop: true
   },
   {
   link: "./login",
@@ -61,8 +56,7 @@ export class ResponsiveToolbarComponent implements OnInit {
   icon: "login",
   showOnMobile: true,
   showOnTablet: true,
-  showOnDesktop: true,
-  index: 5
+  showOnDesktop: true
   }
 ];
   constructor(private router: Router) {}
